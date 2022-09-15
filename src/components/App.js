@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login"
 import Quiz from "./pages/Quiz";
+import Result from "./pages/Result";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
           {/*<Signup></Signup>*/}
           {/*<Login></Login>*/}
           {/*<Home/>*/}
-          <Quiz></Quiz>
+          {/*<Quiz></Quiz>*/}
+          <Result/>
       </Layout>
   );
 }
