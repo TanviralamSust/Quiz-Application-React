@@ -17,7 +17,6 @@ export default function Signup() {
                     <TextInput type="text" placeholder="Enter Name" icon="person"></TextInput>
                     <TextInput type="text" placeholder="Enter Email" icon="alternate_email"></TextInput>
                     <TextInput type="password" placeholder="Enter password" icon="lock"/>
-
                     <TextInput
                         type="password"
                         placeholder="Confirm password"
