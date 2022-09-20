@@ -4,7 +4,7 @@ import classes from "../styles/Illustration.module.css";
 export default function Illustration() {
     return (
         <div className={classes.illustration}>
-            <img src={signupImage} alt="Image"/>
+            <img src={signupImage} alt="signup"/>
         </div>
     )
 }

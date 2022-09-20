@@ -1,7 +1,7 @@
 import TextInput from "./TextInput";
 import Button from "./Button";
 import Form from "./Form";
-import {Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {useState} from "react";
 import {useAuth} from "../contexts/AuthContext";
 import classes from "../styles/Login.module.css";
