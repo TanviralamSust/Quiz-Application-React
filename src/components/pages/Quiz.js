@@ -3,7 +3,7 @@ import ProgressBar from "../ProgressBar";
 import Answers from "../Answers";
 import {useEffect, useReducer, useState} from "react";
 import useQuestions from "../../hooks/useQuestions";
-import {useParams, useNavigate} from "react-router-dom";
+import {useParams, useNavigate, useLocation} from "react-router-dom";
 import _ from "lodash";
 import {useAuth} from "../../contexts/AuthContext";
 import {getDatabase, ref, set} from "firebase/database";
@@ -37,6 +37,12 @@ export default function Quiz() {
     const [qna, dispatch] = useReducer(reducer, initialState);
     const {currentUser} = useAuth();
     const navigate = useNavigate();
+
+    const {state} = useLocation();
+    console.log(state);
+    const {videoTitle} = state;
+
+
 
     useEffect(() => {
         dispatch({
@@ -99,7 +105,7 @@ export default function Quiz() {
                         submit={submit}
                         progress={percentage}
                     ></ProgressBar>
-                    <MiniPlayer>
+                    <MiniPlayer id={id} title={videoTitle}>
                     </MiniPlayer>
                 </>
             )}
