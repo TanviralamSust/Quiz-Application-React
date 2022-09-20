@@ -26,7 +26,8 @@ export default function useFetch(url, method, headers) {
         }
 
         requestFetch();
-    }, []);
+    },  // eslint-disable-next-line
+        []);
 
     return {
         loading,
